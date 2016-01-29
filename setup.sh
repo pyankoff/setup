@@ -31,12 +31,25 @@ sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 # https://toolbelt.heroku.com/debian
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
-# Install SBCL
-sudo apt-get install sbcl
+# Make
+sudo apt-get gcc
+sudo apt-get install make 
+sudo apt-get install automake
 
+# libcurl dev
+sudo apt-get install libcurl4-openssl-dev
 
+# roswel
+git clone -b release https://github.com/roswell/roswell.git
+cd roswell
+sh bootstrap
+./configure
+make
+sudo make install
 
-
+# Install SBCL and clack
+ros install clack
+export PATH=$PATH:/home/ubuntu/.roswell/bin/ 
 
 # git pull and install dotfiles as well
 cd $HOME
