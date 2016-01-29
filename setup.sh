@@ -51,6 +51,9 @@ sudo make install
 ros install clack
 export PATH=$PATH:/home/ubuntu/.roswell/bin/ 
 
+# Perl server starter
+sudo apt-get install libserver-starter-perl
+
 # git pull and install dotfiles as well
 cd $HOME
 if [ -d ./dotfiles/ ]; then
