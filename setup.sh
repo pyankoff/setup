@@ -40,7 +40,7 @@ sudo apt-get install -y automake
 sudo apt-get install -y libcurl4-openssl-dev
 
 #libev
-sudo apt-get install -y libevent-dev
+sudo apt-get install -y libev-dev
 
 # roswel
 git clone -b release https://github.com/roswell/roswell.git
@@ -55,7 +55,7 @@ ros install clack
 export PATH=$PATH:/home/ubuntu/.roswell/bin
 
 # Perl server starter
-sudo apt-get install libserver-starter-perl
+sudo apt-get install -y libserver-starter-perl
 
 # git pull and install dotfiles as well
 cd $HOME
