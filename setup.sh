@@ -72,3 +72,6 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
+# set path to clackup
+export PATH=$PATH:~/.roswell/bin
+echo "alias sudo='sudo env PATH=$PATH'" >> .bashrc
