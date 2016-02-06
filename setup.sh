@@ -32,12 +32,15 @@ sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 # Make
-sudo apt-get gcc
-sudo apt-get install make 
-sudo apt-get install automake
+sudo apt-get install -y gcc
+sudo apt-get install -y make 
+sudo apt-get install -y automake
 
 # libcurl dev
-sudo apt-get install libcurl4-openssl-dev
+sudo apt-get install -y libcurl4-openssl-dev
+
+#libev
+sudo apt-get install -y libevent-dev
 
 # roswel
 git clone -b release https://github.com/roswell/roswell.git
