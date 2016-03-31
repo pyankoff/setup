@@ -45,6 +45,9 @@ sudo apt-get install -y libev-dev
 #fcgi
 sudo apt-get install -y libfcgi-dev
 
+#nginx
+sudo apt-get install -y nginx-full
+
 # roswel
 git clone -b release https://github.com/roswell/roswell.git
 cd roswell
