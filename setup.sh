@@ -63,6 +63,15 @@ export PATH=$PATH:/home/ubuntu/.roswell/bin
 # Perl server starter
 sudo apt-get install -y libserver-starter-perl
 
+# Anaconda
+curl https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda3-4.0.0-Linux-x86_64.sh | sh
+
+source ~/.bashrc
+
+pip install python-telegram-bot
+pip install Flask-SQLAlchemy
+
+
 # git pull and install dotfiles as well
 cd $HOME
 if [ -d ./dotfiles/ ]; then
