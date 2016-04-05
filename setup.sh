@@ -68,6 +68,7 @@ curl https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackc
 
 source ~/.bashrc
 
+sudo apt-get install -y python-psycopg2
 pip install python-telegram-bot
 pip install Flask-SQLAlchemy
 
