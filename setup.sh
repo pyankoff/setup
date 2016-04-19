@@ -57,7 +57,7 @@ make
 sudo make install
 
 # Install SBCL and clack
-ros install clack
+sudo ros install clack
 export PATH=$PATH:/home/ubuntu/.roswell/bin
 
 # Perl server starter
