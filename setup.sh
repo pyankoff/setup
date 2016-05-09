@@ -15,6 +15,8 @@ nvm use v0.10.12
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
+sudo apt-get install -y npm
+sudo apt-get install -y node
 npm install -g jshint
 
 # Install rlwrap to provide libreadline features with node
