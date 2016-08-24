@@ -57,8 +57,12 @@ bash Anaconda3-4.0.0-Linux-x86_64.sh
 
 source ~/.bashrc
 
+# PostgreSQL
+sudo apt-get install -y libpq-dev
+
 conda install psycopg2
 pip install python-telegram-bot
+pip install SQLAlchemy
 pip install Flask-SQLAlchemy
 pip install gunicorn
 
