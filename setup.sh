@@ -60,7 +60,7 @@ source ~/.bashrc
 conda install psycopg2
 pip install python-telegram-bot
 pip install Flask-SQLAlchemy
-
+pip install gunicorn
 
 # git pull and install dotfiles as well
 cd $HOME
